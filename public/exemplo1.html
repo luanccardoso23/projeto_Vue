@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Começando com Vue
+        
+    </title>
+</head>
+<body>
+    <section id="app">
+        <p>Olá, meu nome é {{ nome }}</p>
+        <p>Meu sobrenome é {{ sobrenome }}</p>
+        <p>Sua idade é {{ idade }}</p>
+    </section>
+    <script src="https://unpkg.com/vue@3"></script>
+    <script>
+        const app = Vue.createApp({
+            data(){
+                return{
+                    nome:"Lucas",
+                    sobrenome:"Bittencourt",
+                    idade:"20"
+                }
+            }
+
+        })
+
+        app.mount("#app")
+    </script>
+</body>
+</html>
