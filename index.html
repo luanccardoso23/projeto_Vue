@@ -11,7 +11,7 @@
     <title>Projeto sistema com VUE</title>
 </head>
 <body>
-   <header>
+   <header class="sticky-top">
        <nav class="navbar navbar-expand-lg navbar-light bg-menu">
             <div class="container-fluid">
                 <a href="index.html" class="navbar-brand">Empresa Fullstack</a>
@@ -89,12 +89,12 @@
            <div class="container-fluid py-5 text-center">
                <form action="">
                     <section class="row">
-                        <div class="col-md-6 d-flex align-items-center">
+                        <div class="col-md-6 d-flex align-items-center mt-2">
                             <span class="material-symbols-outlined fs-1 me-2">currency_exchange</span>
                             <input type="text" class="form-control form-control-lg" placeholder="Informe a quantidade de valor em dólar" pattern="^[0-9]+(\.([0-9]{2}))?$" title="Informe apenas números inteiros ou separados por ponto com 2 casas decimais">
                         </div>
 
-                        <div class="col-md-6 d-flex align-items-center">
+                        <div class="col-md-6 d-flex align-items-center mt-2">
                             <span class="material-symbols-outlined fs-1 me-2">currency_exchange</span>
                             <input type="text" class="form-control form-control-lg" placeholder="Qual a cotação do Dólar?" pattern="^[0-9]+(\.([0-9]{2}))?$" title="Informe apenas números inteiros ou separados por ponto com 2 casas decimais">
                         </div>
@@ -134,12 +134,12 @@
            <div class="container-fluid py-5 text-center">
                <form action="">
                    <section class="row">
-                       <div class="col-md-6 d-flex align-items-center">
+                       <div class="col-md-6 d-flex align-items-center mt-2">
                            <span class="material-symbols-outlined fs-1 me-2">currency_exchange</span>
                            <input type="text" class="form-control form-control-lg" placeholder="Qual valor você quer calcular?" pattern="^[0-9]+(\.([0-9]{2}))?$" title="Informe apenas números inteiros ou separados por ponto com 2 casas decimais"pattern="^[0-9]+(\.([0-9]{2}))?$" title="Informe apenas números inteiros ou separados por ponto com 2 casas decimais">
                            
                        </div>
-                       <div class="col-md-6 d-flex align-items-center">
+                       <div class="col-md-6 d-flex align-items-center mt-2">
                            <span class="material-symbols-outlined fs-1 me-2">percent</span>
                            <input type="text" class="form-control form-control-lg" placeholder="Qual o valor da porcentagem?" pattern="^[0-9]+(\.([0-9]{2}))?$" title="Informe apenas números inteiros ou separados por ponto com 2 casas decimais"pattern="^[0-9]+(\.([0-9]{2}))?$" title="Informe apenas números inteiros ou separados por ponto com 2 casas decimais" >
 
@@ -155,7 +155,7 @@
    </main>
     <!-- CRIANDO MODAL PARA MENU SOBRE -->
     <section class="modal fade" id="modalSobre" tabindex="-1">
-        <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title">Desenvolvedor</h5>
@@ -163,9 +163,25 @@
                 </div>
                 <div class="modal-body">
                     <div class="card">
-                        <img src="https://i.stack.imgur.com/YaL3s.jpg" alt="foto de perfil" class="card-img-top img-thumbnail rounded-circle mx-auto w-200">
+                        <img src="https://uploads.metropoles.com/wp-content/uploads/2020/11/30102122/Cantor-The-Weeknd-1.jpg" alt="foto de perfil" class="card-img-top img-thumbnail rounded-circle mx-auto w-200">
+                        
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Mário Fullermann</h5>
+                            <p class="card-text text-center">mariofullermann@gmail.com</p>
+                            <p class="card-text">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam saepe maiores enim obcaecati vero eum facilis veritatis quam alias dolores vitae explicabo beatae quod ad ducimus nostrum, placeat ratione fugiat?Modi necessitatibus possimus recusandae voluptatibus ratione, eaque tenetur. Minima alias perferendis libero provident qui velit enim? Rem corporis voluptatum provident eos, mollitia excepturi hic ducimus quibusdam quae amet id velit?
+                            </p>
+
+                        </div>
                     </div>
 
+
+
+
+                </div>
+
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" data-bs-dismiss="modal">Sair</button>
                 </div>
             </div>
 
